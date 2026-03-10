@@ -2,12 +2,14 @@ name: Update Dashboard
 
 on:
   schedule:
-    - cron: '0 */4 * * *'  # Cada 4 horas
-  workflow_dispatch:        # También se puede correr manualmente desde GitHub
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repositorio
