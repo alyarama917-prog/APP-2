@@ -1,0 +1,7 @@
+.env
+*.pyc
+__pycache__/
+.venv/
+venv/
+.DS_Store
+dashboard_CEO_SS_v31*.html
