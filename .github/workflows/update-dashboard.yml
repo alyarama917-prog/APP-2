@@ -1,0 +1,37 @@
+name: Update Dashboard
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'  # Cada 4 horas
+  workflow_dispatch:        # También se puede correr manualmente desde GitHub
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Actualizar dashboard con datos de HubSpot
+        env:
+          HUBSPOT_API_KEY: ${{ secrets.HUBSPOT_API_KEY }}
+        run: python actualizar_dashboard_SS.py
+
+      - name: Commit y push si hay cambios
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git diff --staged --quiet || git commit -m "chore: actualizar datos del dashboard [skip ci]"
+          git push
