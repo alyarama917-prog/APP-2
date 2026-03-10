@@ -482,33 +482,28 @@ const PS=10, tS={m:{p:1},y:{p:1}}, tD={m:[],y:[]}, charts={};
 // Se usa para: tabla "Negocios Creados", sección "Negocios Totales" (fila deals en SUM)
 // Los valores de Proyección, Cierres Ganados, etc. tienen sus propias fuentes independientes
 const ALL_DEALS = [
-  // ── Marzo (2 deals) ──
-  {n:"Tee shot CDMX",                   o:"Cynthia González", amt:107831, stage:"Cotización Env.",   createMonth:"Marzo",   closeMonth:"Abr",   vertical:"Club Deportivo",           producto:"Golf",   createOrder:1},
-  {n:"Leonardo Hdz - GREEN WORLD",      o:"Cynthia González", amt:62898,  stage:"Cotización Env.",   createMonth:"Marzo",   closeMonth:"Abr",   vertical:"Centro de Entretenimiento",  producto:"Golf",   createOrder:2},
-  // ── Febrero (8 deals) ──
-  {n:"ARQ. Ricardo Acuña - Herradura",  o:"Cynthia González", amt:99000,  stage:"Cotización Env.",   createMonth:"Febrero", closeMonth:"Mar",   vertical:"Residencial",               producto:"Wave",   createOrder:3},
-  {n:"Agustin Lobo - Residencial",      o:"Cynthia González", amt:103862, stage:"Cotización Env.",   createMonth:"Febrero", closeMonth:"Abr",   vertical:"Residencial",               producto:"Wave",   createOrder:4},
-  {n:"Mauricio Rivera - Allende NL",    o:"Cynthia González", amt:29651,  stage:"Cierre Ganado",     createMonth:"Febrero", closeMonth:"Mar",   vertical:"Residencial",               producto:"Wave",   createOrder:5},
-  {n:"Poliza Platino Querencia",        o:"Ivan Leija",       amt:5706,   stage:"Cotización Env.",   createMonth:"Febrero", closeMonth:"Mar",   vertical:"Desarrollo Inmobiliario",   producto:"Golf",   createOrder:6},
-  {n:"Eduardo Galvan",                  o:"Jorge Avalos",     amt:59337,  stage:"Cierre Ganado",     createMonth:"Febrero", closeMonth:"Mar",   vertical:"Residencial",               producto:"Golf",   createOrder:7},
-  {n:"Ivan Ahumada_Los Cabos",          o:"Cynthia González", amt:489948, stage:"Cotización Env.",   createMonth:"Febrero", closeMonth:"Abr",   vertical:"Desarrollo Inmobiliario",   producto:"Batbox", createOrder:8},
-  {n:"AURORA TOWERS - CANCUN",          o:"Cynthia González", amt:84199,  stage:"Cotización Env.",   createMonth:"Febrero", closeMonth:"Ene27", vertical:"Desarrollo Inmobiliario",   producto:"Batbox", createOrder:9},
-  {n:"ARQ. Miguel Sports Bar Acapulco", o:"Cynthia González", amt:166420, stage:"Cotización Env.",   createMonth:"Febrero", closeMonth:"Mar",   vertical:"Centro de Entretenimiento",  producto:"Golf",   createOrder:10},
-  // ── Enero (14 deals, incluye Cierre Perdido y Dejó de Responder) ──
-  {n:"Rafael Saldaña",                  o:"Jorge Avalos",     amt:99375,  stage:"Cierre Ganado",     createMonth:"Enero",   closeMonth:"Ene",   vertical:"Residencial",               producto:"Golf",   createOrder:11},
-  {n:"STELARHE - Cristian Villalobos",  o:"Cynthia González", amt:96690,  stage:"Cotización Env.",   createMonth:"Enero",   closeMonth:"Abr",   vertical:"Centro de Entretenimiento",  producto:"Batbox", createOrder:12},
-  {n:"Bolerama Pastora",                o:"Cynthia González", amt:187550, stage:"Cierre Ganado",     createMonth:"Enero",   closeMonth:"Feb",   vertical:"Centro de Entretenimiento",  producto:"Batbox", createOrder:13},
-  {n:"David Aldana - culiacan",         o:"Cynthia González", amt:320288, stage:"Cotización Env.",   createMonth:"Enero",   closeMonth:"Ago",   vertical:"Residencial",               producto:"Batbox", createOrder:14},
-  {n:"Póliza MTTO Oro - Saqqara 2",     o:"Ivan Leija",       amt:5187,   stage:"Cierre Ganado",     createMonth:"Enero",   closeMonth:"Feb",   vertical:"Desarrollo Inmobiliario",   producto:"Golf",   createOrder:15},
-  {n:"WAVE Residencial - Rodolfo Herrera",o:"Ivan Leija",     amt:27703,  stage:"Cierre Ganado",     createMonth:"Enero",   closeMonth:"Ene",   vertical:"Residencial",               producto:"Wave",   createOrder:16},
-  {n:"Cornelio Loewen - Chihuahua",     o:"Cynthia González", amt:118913, stage:"Dejó de Responder", createMonth:"Enero",   closeMonth:"Mar",   vertical:"Residencial",               producto:"Mix",    createOrder:17},
-  {n:"Elias- Puebla",                   o:"Cynthia González", amt:27861,  stage:"Negociación",       createMonth:"Enero",   closeMonth:"Mar",   vertical:"Residencial",               producto:"Wave",   createOrder:18},
-  {n:"Gabriel Perez",                   o:"Cynthia González", amt:196500, stage:"Cierre Perdido",    createMonth:"Enero",   closeMonth:"Abr",   vertical:"Desarrollo Inmobiliario",   producto:"Batbox", createOrder:19},
-  {n:"Fer Berjes - Guadalajara",        o:"Cynthia González", amt:97500,  stage:"Cierre Perdido",    createMonth:"Enero",   closeMonth:"Feb",   vertical:"Centro de Entretenimiento",  producto:"Golf",   createOrder:20},
-  {n:"SIMULADOR X GYM",                 o:"Ivan Leija",       amt:19499,  stage:"Cierre Perdido",    createMonth:"Enero",   closeMonth:"Mar",   vertical:"Club Deportivo",            producto:"Mix",    createOrder:21},
-  {n:"NX-Residencial Luis Quijano",     o:"Ivan Leija",       amt:70000,  stage:"Cierre Perdido",    createMonth:"Enero",   closeMonth:"Mar",   vertical:"Residencial",               producto:"Wave",   createOrder:22},
-  {n:"Salvador Gil - Residencial.",     o:"Cynthia González", amt:105156, stage:"Cotización Env.",   createMonth:"Enero",   closeMonth:"Mar",   vertical:"Residencial",               producto:"Wave",   createOrder:23},
-  {n:"SEDENA - BATBOX",                 o:"Jorge Avalos",     amt:294730, stage:"Negociación",       createMonth:"Enero",   closeMonth:"May",   vertical:"Desarrollo Inmobiliario",   producto:"Batbox", createOrder:24},
+  {n:"SEDENA - BATBOX", o:"Jorge Avalos", amt:294730, stage:"1249322550", createMonth:"Enero", closeMonth:"May", vertical:"Desarrollo Inmobiliario", producto:"Batbox", createOrder:24},
+  {n:"Salvador Gil - Residencial.", o:"Cynthia González", amt:105156, stage:"1249322549", createMonth:"Enero", closeMonth:"Mar", vertical:"Residencial", producto:"Wave", createOrder:23},
+  {n:"Fer Berjes - Guadalajara", o:"Cynthia González", amt:97500, stage:"Cierre Perdido", createMonth:"Enero", closeMonth:"Feb", vertical:"Centro de Entretenimiento", producto:"Golf", createOrder:20},
+  {n:"Gabriel Perez", o:"Cynthia González", amt:196500, stage:"Cierre Perdido", createMonth:"Enero", closeMonth:"Abr", vertical:"Desarrollo Inmobiliario", producto:"Batbox", createOrder:19},
+  {n:"Elias- Puebla", o:"Cynthia González", amt:27861, stage:"1249322550", createMonth:"Enero", closeMonth:"Mar", vertical:"Residencial", producto:"Wave", createOrder:18},
+  {n:"Cornelio Loewen - Chihuahua", o:"Cynthia González", amt:118913, stage:"Dejó de Responder", createMonth:"Enero", closeMonth:"Mar", vertical:"Residencial", producto:"Mix", createOrder:17},
+  {n:"WAVE Residencial - Rodolfo Herrera", o:"Ivan Leija", amt:27703, stage:"Cierre Ganado", createMonth:"Enero", closeMonth:"Ene", vertical:"Residencial", producto:"Wave", createOrder:16},
+  {n:"Póliza MTTO Oro - Saqqara 2", o:"Ivan Leija", amt:5187, stage:"Cierre Ganado", createMonth:"Enero", closeMonth:"Feb", vertical:"Desarrollo Inmobiliario", producto:"Golf", createOrder:15},
+  {n:"David Aldana - culiacan", o:"Cynthia González", amt:320288, stage:"1249322549", createMonth:"Enero", closeMonth:"Ago", vertical:"Residencial", producto:"Batbox", createOrder:14},
+  {n:"Bolerama Pastora", o:"Cynthia González", amt:187550, stage:"Cierre Ganado", createMonth:"Enero", closeMonth:"Feb", vertical:"Centro de Entretenimiento", producto:"Batbox", createOrder:13},
+  {n:"STELARHE - Cristian Villalobos", o:"Cynthia González", amt:96690, stage:"1249322549", createMonth:"Enero", closeMonth:"Abr", vertical:"Centro de Entretenimiento", producto:"Batbox", createOrder:12},
+  {n:"Rafael Saldaña", o:"Jorge Avalos", amt:99375, stage:"Cierre Ganado", createMonth:"Enero", closeMonth:"Ene", vertical:"Residencial", producto:"Golf", createOrder:11},
+  {n:"ARQ. Miguel _ Sports Bar Acapulco", o:"Cynthia González", amt:166420, stage:"1249322549", createMonth:"Febrero", closeMonth:"Mar", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:13},
+  {n:"AURORA TOWERS - CANCUN", o:"Cynthia González", amt:84199, stage:"1249322549", createMonth:"Febrero", closeMonth:"Ene", vertical:"Desarrollo Inmobiliario", producto:"Batbox", createOrder:9},
+  {n:"Ivan Ahumada_Los Cabos", o:"Cynthia González", amt:489948, stage:"1249322549", createMonth:"Febrero", closeMonth:"Abr", vertical:"Desarrollo Inmobiliario", producto:"Batbox", createOrder:8},
+  {n:"Eduardo Galvan", o:"Jorge Avalos", amt:59337, stage:"Cierre Ganado", createMonth:"Febrero", closeMonth:"Mar", vertical:"Residencial", producto:"Golf", createOrder:7},
+  {n:"Poliza Platino Querencia", o:"Ivan Leija", amt:5706, stage:"1249322549", createMonth:"Febrero", closeMonth:"Mar", vertical:"Desarrollo Inmobiliario", producto:"Golf", createOrder:6},
+  {n:"Mauricio Rivera - Allende NL", o:"Cynthia González", amt:29651, stage:"Cierre Ganado", createMonth:"Febrero", closeMonth:"Mar", vertical:"Residencial", producto:"Wave", createOrder:5},
+  {n:"Agustin Lobo - Residencial", o:"Cynthia González", amt:103862, stage:"1249322549", createMonth:"Febrero", closeMonth:"Abr", vertical:"Residencial", producto:"Wave", createOrder:4},
+  {n:"ARQ. Ricardo Acuña - Herradura", o:"Cynthia González", amt:99000, stage:"1249322549", createMonth:"Febrero", closeMonth:"Mar", vertical:"Residencial", producto:"Wave", createOrder:3},
+  {n:"Tee shot CDMX", o:"Cynthia González", amt:107831, stage:"1249322549", createMonth:"Marzo", closeMonth:"Abr", vertical:"Club Deportivo", producto:"Golf", createOrder:1},
+  {n:"Leonardo Hdz - GREEN WORLD", o:"Cynthia González", amt:62898, stage:"1249322549", createMonth:"Marzo", closeMonth:"Abr", vertical:"Centro de Entretenimiento", producto:"Golf", createOrder:2},
 ];
 
 const DEALS_MONTH = ALL_DEALS.filter(d => d.createMonth === 'Marzo');
@@ -526,18 +521,10 @@ const TABLE_TITLES = {
 // REGLA: totalVal = Pipeline 2026 · fecha CREACIÓN · TODOS los deals (sin exclusión de etapas)
 // REGLA: wonVal   = Cierres Ganados con closedate en 2026 · Pipeline 2025 + Pipeline 2026
 const SUM = {
-  month: { c:{contacts:90,  deals:2,  won:1, accepted:0, wonVal:29651,  totalVal:170729},
-           j:{contacts:6,   deals:0,  won:2, accepted:0, wonVal:88337,  totalVal:0},
-           i:{contacts:0,   deals:0,  won:0, accepted:0, wonVal:0,      totalVal:0} },
-  q1:    { c:{contacts:273, deals:16, won:3, accepted:0, wonVal:310329, totalVal:2294267},
-           j:{contacts:41,  deals:3,  won:4, accepted:0, wonVal:287712, totalVal:453442},
-           i:{contacts:26,  deals:5,  won:2, accepted:0, wonVal:32890,  totalVal:38596} },
-  q2:    { c:{contacts:0,   deals:0,  won:0, accepted:0, wonVal:0,      totalVal:0},
-           j:{contacts:0,   deals:0,  won:0, accepted:0, wonVal:0,      totalVal:0},
-           i:{contacts:0,   deals:0,  won:0, accepted:0, wonVal:0,      totalVal:0} },
-  year:  { c:{contacts:273, deals:16, won:3, accepted:0, wonVal:310329, totalVal:2294267},
-           j:{contacts:41,  deals:3,  won:4, accepted:0, wonVal:287712, totalVal:453442},
-           i:{contacts:19,  deals:5,  won:2, accepted:0, wonVal:32890,  totalVal:38596} }
+  month: { c:{contacts:24,deals:2,won:1,accepted:0,wonVal:29651,totalVal:170729}, j:{contacts:6,deals:0,won:2,accepted:0,wonVal:88337,totalVal:0}, i:{contacts:0,deals:0,won:0,accepted:0,wonVal:0,totalVal:0} },
+  q1: { c:{contacts:207,deals:16,won:3,accepted:0,wonVal:310329,totalVal:2294267}, j:{contacts:41,deals:3,won:4,accepted:0,wonVal:287712,totalVal:453442}, i:{contacts:26,deals:3,won:2,accepted:0,wonVal:32890,totalVal:38596} },
+  q2: { c:{contacts:0,deals:0,won:0,accepted:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,accepted:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,accepted:0,wonVal:0,totalVal:0} },
+  year: { c:{contacts:207,deals:16,won:3,accepted:0,wonVal:310329,totalVal:2294267}, j:{contacts:41,deals:3,won:4,accepted:0,wonVal:287712,totalVal:453442}, i:{contacts:26,deals:3,won:2,accepted:0,wonVal:32890,totalVal:38596} },
 };
 
 // ─── MONTHLY: tarjetas vendedor ─────────────────────────────────────────────
@@ -545,14 +532,24 @@ const SUM = {
 // REGLA MONTHLY: contacts = contactos asignados al vendedor creados en ese mes (fuente HubSpot)
 // REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
 // REGLA MONTHLY: wonVal   = Cierres Ganados P2025+P2026 por fecha de cierre en ese mes
+// REGLA MONTHLY: contacts = contactos asignados al vendedor creados ese mes (fuente HubSpot)
+// REGLA MONTHLY: deals    = TODOS los negocios creados en el mes (incluyendo Perdidos/Dejó de Responder)
+// REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
+// REGLA MONTHLY: wonVal   = Cierres Ganados P2025+P2026 por fecha de CIERRE en ese mes
 const MONTHLY = {
-  Ene:  { label:'Enero 2026',    c:{contacts:69,  deals:8,  won:0,wonVal:0,      totalVal:1150458}, j:{contacts:18,deals:2,won:2,wonVal:199375,totalVal:394105}, i:{contacts:21,deals:4,won:1,wonVal:27703, totalVal:122389} },
-  Feb:  { label:'Febrero 2026',  c:{contacts:114, deals:6,  won:2,wonVal:280678, totalVal:973080},  j:{contacts:17,deals:1,won:0,wonVal:0,     totalVal:59337},  i:{contacts:5, deals:1,won:1,wonVal:5187,  totalVal:5706}   },
-  Mar:  { label:'Marzo 2026',    c:{contacts:90,  deals:2,  won:1,wonVal:29651,  totalVal:170729},  j:{contacts:6, deals:0,won:2,wonVal:88337, totalVal:0},      i:{contacts:0, deals:0,won:0,wonVal:0,     totalVal:0}       },
-  Anio: { label:'Año 2026',      c:{contacts:273, deals:16, won:3,wonVal:310329, totalVal:2294267}, j:{contacts:41,deals:3,won:4,wonVal:287712,totalVal:453442}, i:{contacts:26,deals:5,won:2,wonVal:32890, totalVal:128095}  },
-  Abr:  { label:'Abril 2026',    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
-  May:  { label:'Mayo 2026',     c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
-  Jun:  { label:'Junio 2026',    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  Ene:  { label:"Enero 2026",    c:{contacts:69,deals:8,won:0,wonVal:0,totalVal:1150458}, j:{contacts:18,deals:2,won:2,wonVal:199375,totalVal:394105}, i:{contacts:21,deals:2,won:1,wonVal:27703,totalVal:32890} },
+  Feb:  { label:"Febrero 2026",    c:{contacts:114,deals:6,won:2,wonVal:280678,totalVal:973080}, j:{contacts:17,deals:1,won:0,wonVal:0,totalVal:59337}, i:{contacts:5,deals:1,won:1,wonVal:5187,totalVal:5706} },
+  Mar:  { label:"Marzo 2026",    c:{contacts:24,deals:2,won:1,wonVal:29651,totalVal:170729}, j:{contacts:6,deals:0,won:2,wonVal:88337,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  Abr:  { label:"Abril 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  May:  { label:"Mayo 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  Jun:  { label:"Junio 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  Jul:  { label:"Julio 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  Ago:  { label:"Agosto 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  Sep:  { label:"Septiembre 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  Oct:  { label:"Octubre 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  Nov:  { label:"Noviembre 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  Dic:  { label:"Diciembre 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  Anio: { label:"Año 2026",      c:{contacts:207,deals:16,won:3,wonVal:310329,totalVal:2294267}, j:{contacts:41,deals:3,won:4,wonVal:287712,totalVal:453442}, i:{contacts:26,deals:3,won:2,wonVal:32890,totalVal:38596} },
 };
 
 // ─── TOTALVAL: Proyección Cierres ────────────────────────────────────────────
@@ -567,15 +564,15 @@ const TOTALVAL = {
 
 // ─── WON_2026: cierres ganados ───────────────────────────────────────────────
 const WON_2026 = [
-  {n:'Rafael Saldaña',                    owner:'Jorge Avalos',     amount:99375,  closeMonth:'Enero'},
-  {n:'Arturo Cervantes Acapulco',         owner:'Jorge Avalos',     amount:100000, closeMonth:'Enero'},
-  {n:'WAVE Residencial - Rodolfo Herrera',owner:'Ivan Leija',       amount:27703,  closeMonth:'Enero'},
-  {n:'Antuany Fdz - Sports Bar Mda',      owner:'Cynthia González', amount:93128,  closeMonth:'Febrero'},
-  {n:'Bolerama Pastora',                  owner:'Cynthia González', amount:187550, closeMonth:'Febrero'},
-  {n:'Póliza MTTO Oro - Saqqara 2',       owner:'Ivan Leija',       amount:5187,   closeMonth:'Febrero'},
-  {n:'Eduardo Galvan',                    owner:'Jorge Avalos',     amount:59337,  closeMonth:'Marzo'},
-  {n:'Mauricio Rivera - Allende NL',      owner:'Cynthia González', amount:29651,  closeMonth:'Marzo'},
-  {n:'Angeles Torreon F1',                owner:'Jorge Avalos',     amount:29000,  closeMonth:'Marzo'},
+  {n:"Rafael Saldaña", owner:"Jorge Avalos", amount:99375, closeMonth:"Enero"},
+  {n:"WAVE Residencial - Rodolfo Herrera", owner:"Ivan Leija", amount:27703, closeMonth:"Enero"},
+  {n:"Arturo Cervantes Acapulco", owner:"Jorge Avalos", amount:100000, closeMonth:"Enero"},
+  {n:"Antuany Fdz - Sports Bar Mérida", owner:"Cynthia González", amount:93128, closeMonth:"Febrero"},
+  {n:"Póliza MTTO Oro - Saqqara 2", owner:"Ivan Leija", amount:5187, closeMonth:"Febrero"},
+  {n:"Bolerama Pastora", owner:"Cynthia González", amount:187550, closeMonth:"Febrero"},
+  {n:"Eduardo Galvan", owner:"Jorge Avalos", amount:59337, closeMonth:"Marzo"},
+  {n:"Mauricio Rivera - Allende NL", owner:"Cynthia González", amount:29651, closeMonth:"Marzo"},
+  {n:"Angeles Torreon F1", owner:"Jorge Avalos", amount:29000, closeMonth:"Marzo"},
 ];
 
 // ─── WON_DETAIL: modal cierres ganados por vendedor ──────────────────────────
