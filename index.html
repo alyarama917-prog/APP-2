@@ -542,8 +542,8 @@ const TABLE_TITLES = {
 const SUM = {
   month: { c:{contacts:70,deals:11,won:2,accepted:0,wonVal:64844,totalVal:925893}, j:{contacts:19,deals:6,won:6,accepted:0,wonVal:739070,totalVal:353914}, i:{contacts:1,deals:4,won:2,accepted:0,wonVal:2643,totalVal:5104} },
   q1: { c:{contacts:253,deals:25,won:4,accepted:0,wonVal:345522,totalVal:3049279}, j:{contacts:54,deals:9,won:9,accepted:0,wonVal:958445,totalVal:807356}, i:{contacts:28,deals:7,won:4,accepted:0,wonVal:35533,totalVal:43700} },
-  q2: { c:{contacts:0,deals:0,won:0,accepted:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,accepted:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,accepted:0,wonVal:0,totalVal:0} },
-  year: { c:{contacts:253,deals:25,won:4,accepted:0,wonVal:345522,totalVal:3049279}, j:{contacts:54,deals:9,won:9,accepted:0,wonVal:958445,totalVal:807356}, i:{contacts:28,deals:7,won:4,accepted:0,wonVal:35533,totalVal:43700} },
+  q2: { c:{contacts:0,deals:0,won:0,accepted:0,wonVal:0,totalVal:0}, j:{contacts:1,deals:0,won:0,accepted:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,accepted:0,wonVal:0,totalVal:0} },
+  year: { c:{contacts:253,deals:25,won:4,accepted:0,wonVal:345522,totalVal:3049279}, j:{contacts:55,deals:9,won:9,accepted:0,wonVal:958445,totalVal:807356}, i:{contacts:28,deals:7,won:4,accepted:0,wonVal:35533,totalVal:43700} },
 };
 
 // ─── MONTHLY: tarjetas vendedor ─────────────────────────────────────────────
@@ -767,11 +767,15 @@ const SUM = {
 // REGLA MONTHLY: deals    = TODOS los negocios creados en el mes (incluyendo Perdidos/Dejó de Responder)
 // REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
 // REGLA MONTHLY: wonVal   = Cierres Ganados P2025+P2026 por fecha de CIERRE en ese mes
+// REGLA MONTHLY: contacts = contactos asignados al vendedor creados ese mes (fuente HubSpot)
+// REGLA MONTHLY: deals    = TODOS los negocios creados en el mes (incluyendo Perdidos/Dejó de Responder)
+// REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
+// REGLA MONTHLY: wonVal   = Cierres Ganados P2025+P2026 por fecha de CIERRE en ese mes
 const MONTHLY = {
   Ene:  { label:"Enero 2026",    c:{contacts:69,deals:8,won:0,wonVal:0,totalVal:1150458}, j:{contacts:18,deals:2,won:1,wonVal:99375,totalVal:394105}, i:{contacts:21,deals:2,won:1,wonVal:27703,totalVal:32890} },
   Feb:  { label:"Febrero 2026",    c:{contacts:114,deals:6,won:2,wonVal:280678,totalVal:972928}, j:{contacts:17,deals:1,won:2,wonVal:120000,totalVal:59337}, i:{contacts:6,deals:1,won:1,wonVal:5187,totalVal:5706} },
   Mar:  { label:"Marzo 2026",    c:{contacts:70,deals:11,won:2,wonVal:64844,totalVal:925893}, j:{contacts:19,deals:6,won:6,wonVal:739070,totalVal:353914}, i:{contacts:1,deals:4,won:2,wonVal:2643,totalVal:5104} },
-  Abr:  { label:"Abril 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
+  Abr:  { label:"Abril 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:1,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
   May:  { label:"Mayo 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
   Jun:  { label:"Junio 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
   Jul:  { label:"Julio 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
@@ -780,7 +784,7 @@ const MONTHLY = {
   Oct:  { label:"Octubre 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
   Nov:  { label:"Noviembre 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
   Dic:  { label:"Diciembre 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
-  Anio: { label:"Año 2026",      c:{contacts:253,deals:25,won:4,wonVal:345522,totalVal:3049279}, j:{contacts:54,deals:9,won:9,wonVal:958445,totalVal:807356}, i:{contacts:28,deals:7,won:4,wonVal:35533,totalVal:43700} },
+  Anio: { label:"Año 2026",      c:{contacts:253,deals:25,won:4,wonVal:345522,totalVal:3049279}, j:{contacts:55,deals:9,won:9,wonVal:958445,totalVal:807356}, i:{contacts:28,deals:7,won:4,wonVal:35533,totalVal:43700} },
 };
 
 // ─── TOTALVAL: Proyección Cierres ────────────────────────────────────────────
