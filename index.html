@@ -483,7 +483,7 @@ const PS=10, tS={m:{p:1},y:{p:1}}, tD={m:[],y:[]}, charts={};
 // Los valores de Proyección, Cierres Ganados, etc. tienen sus propias fuentes independientes
 const ALL_DEALS = [
   {n:"SEDENA - BATBOX", o:"Jorge Avalos", amt:294730, stage:"1249322550", createMonth:"Enero", closeMonth:"May", vertical:"Desarrollo Inmobiliario", producto:"Batbox", createOrder:24},
-  {n:"Salvador Gil - Residencial.", o:"Cynthia González", amt:105156, stage:"1249322550", createMonth:"Enero", closeMonth:"Abr", vertical:"Residencial", producto:"Wave", createOrder:23},
+  {n:"Salvador Gil - Residencial.", o:"Cynthia González", amt:105156, stage:"1249322550", createMonth:"Enero", closeMonth:"May", vertical:"Residencial", producto:"Wave", createOrder:23},
   {n:"Fer Berjes - Guadalajara", o:"Cynthia González", amt:97500, stage:"Cierre Perdido", createMonth:"Enero", closeMonth:"Feb", vertical:"Centro de Entretenimiento", producto:"Golf", createOrder:20},
   {n:"Gabriel Perez", o:"Cynthia González", amt:196500, stage:"Cierre Perdido", createMonth:"Enero", closeMonth:"Abr", vertical:"Desarrollo Inmobiliario", producto:"Batbox", createOrder:19},
   {n:"Elias- Puebla", o:"Cynthia González", amt:23520, stage:"1249322552", createMonth:"Enero", closeMonth:"Abr", vertical:"Residencial", producto:"Wave", createOrder:18},
@@ -556,6 +556,10 @@ const SUM = {
 // REGLA MONTHLY: contacts = contactos asignados al vendedor creados en ese mes (fuente HubSpot)
 // REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
 // REGLA MONTHLY: wonVal   = Cierres Ganados P2025+P2026 por fecha de cierre en ese mes
+// REGLA MONTHLY: contacts = contactos asignados al vendedor creados ese mes (fuente HubSpot)
+// REGLA MONTHLY: deals    = TODOS los negocios creados en el mes (incluyendo Perdidos/Dejó de Responder)
+// REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
+// REGLA MONTHLY: wonVal   = Cierres Ganados P2025+P2026 por fecha de CIERRE en ese mes
 // REGLA MONTHLY: contacts = contactos asignados al vendedor creados ese mes (fuente HubSpot)
 // REGLA MONTHLY: deals    = TODOS los negocios creados en el mes (incluyendo Perdidos/Dejó de Responder)
 // REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
