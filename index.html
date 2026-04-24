@@ -500,7 +500,7 @@ const ALL_DEALS = [
   {n:"Eduardo Galvan", o:"Jorge Avalos", amt:59337, stage:"Cierre Ganado", createMonth:"Febrero", closeMonth:"Feb", vertical:"Residencial", producto:"Golf", createOrder:7},
   {n:"Poliza Platino Querencia", o:"Ivan Leija", amt:5706, stage:"Cierre Perdido", createMonth:"Febrero", closeMonth:"Mar", vertical:"Desarrollo Inmobiliario", producto:"Golf", createOrder:6},
   {n:"Mauricio Rivera - Allende NL", o:"Cynthia González", amt:29499, stage:"Cierre Ganado", createMonth:"Febrero", closeMonth:"Mar", vertical:"Residencial", producto:"Wave", createOrder:5},
-  {n:"Agustin Lobo - Residencial", o:"Cynthia González", amt:103862, stage:"1249322552", createMonth:"Febrero", closeMonth:"Jun", vertical:"Residencial", producto:"Wave", createOrder:4},
+  {n:"Agustin Lobo - Residencial", o:"Cynthia González", amt:103862, stage:"1249322552", createMonth:"Febrero", closeMonth:"Ago", vertical:"Residencial", producto:"Wave", createOrder:4},
   {n:"ARQ. Ricardo Acuña - Herradura", o:"Cynthia González", amt:103862, stage:"1249322549", createMonth:"Febrero", closeMonth:"Abr", vertical:"Residencial", producto:"Wave", createOrder:3},
   {n:"CABINAS BB USA MARZO", o:"425771811", amt:130000, stage:"Cierre Ganado", createMonth:"Marzo", closeMonth:"Mar", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:21},
   {n:"Tee shot CDMX", o:"Cynthia González", amt:107831, stage:"1249322549", createMonth:"Marzo", closeMonth:"May", vertical:"Club Deportivo", producto:"Golf", createOrder:1},
@@ -559,6 +559,10 @@ const SUM = {
 // REGLA MONTHLY: contacts = contactos asignados al vendedor creados en ese mes (fuente HubSpot)
 // REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
 // REGLA MONTHLY: wonVal   = Cierres Ganados P2025+P2026 por fecha de cierre en ese mes
+// REGLA MONTHLY: contacts = contactos asignados al vendedor creados ese mes (fuente HubSpot)
+// REGLA MONTHLY: deals    = TODOS los negocios creados en el mes (incluyendo Perdidos/Dejó de Responder)
+// REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
+// REGLA MONTHLY: wonVal   = Cierres Ganados P2025+P2026 por fecha de CIERRE en ese mes
 // REGLA MONTHLY: contacts = contactos asignados al vendedor creados ese mes (fuente HubSpot)
 // REGLA MONTHLY: deals    = TODOS los negocios creados en el mes (incluyendo Perdidos/Dejó de Responder)
 // REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
