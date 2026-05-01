@@ -482,11 +482,11 @@ const PS=10, tS={m:{p:1},y:{p:1}}, tD={m:[],y:[]}, charts={};
 // Se usa para: tabla "Negocios Creados", sección "Negocios Totales" (fila deals en SUM)
 // Los valores de Proyección, Cierres Ganados, etc. tienen sus propias fuentes independientes
 const ALL_DEALS = [
-  {n:"SEDENA - BATBOX", o:"Jorge Avalos", amt:294730, stage:"1249322550", createMonth:"Enero", closeMonth:"May", vertical:"Desarrollo Inmobiliario", producto:"Batbox", createOrder:24},
+  {n:"SEDENA - BATBOX", o:"Jorge Avalos", amt:167660, stage:"1249322552", createMonth:"Enero", closeMonth:"May", vertical:"Desarrollo Inmobiliario", producto:"Batbox", createOrder:24},
   {n:"Salvador Gil - Residencial.", o:"Cynthia González", amt:105156, stage:"1249322550", createMonth:"Enero", closeMonth:"May", vertical:"Residencial", producto:"Wave", createOrder:23},
   {n:"Fer Berjes - Guadalajara", o:"Cynthia González", amt:97500, stage:"Cierre Perdido", createMonth:"Enero", closeMonth:"Feb", vertical:"Centro de Entretenimiento", producto:"Golf", createOrder:20},
   {n:"Gabriel Perez", o:"Cynthia González", amt:196500, stage:"Cierre Perdido", createMonth:"Enero", closeMonth:"Abr", vertical:"Desarrollo Inmobiliario", producto:"Batbox", createOrder:19},
-  {n:"Elias- Puebla", o:"Cynthia González", amt:23520, stage:"1249322552", createMonth:"Enero", closeMonth:"Abr", vertical:"Residencial", producto:"Wave", createOrder:18},
+  {n:"Elias- Puebla", o:"Cynthia González", amt:23520, stage:"1249322552", createMonth:"Enero", closeMonth:"—", vertical:"Residencial", producto:"Wave", createOrder:18},
   {n:"Cornelio Loewen - Chihuahua", o:"Cynthia González", amt:118913, stage:"Dejó de Responder", createMonth:"Enero", closeMonth:"Mar", vertical:"Residencial", producto:"Mix", createOrder:17},
   {n:"WAVE Residencial - Rodolfo Herrera", o:"Ivan Leija", amt:27703, stage:"Cierre Ganado", createMonth:"Enero", closeMonth:"Ene", vertical:"Residencial", producto:"Wave", createOrder:16},
   {n:"Póliza MTTO Oro - Saqqara 2", o:"Ivan Leija", amt:5187, stage:"Cierre Ganado", createMonth:"Enero", closeMonth:"Feb", vertical:"Desarrollo Inmobiliario", producto:"Golf", createOrder:15},
@@ -501,24 +501,24 @@ const ALL_DEALS = [
   {n:"Poliza Platino Querencia", o:"Ivan Leija", amt:5706, stage:"Cierre Perdido", createMonth:"Febrero", closeMonth:"Mar", vertical:"Desarrollo Inmobiliario", producto:"Golf", createOrder:6},
   {n:"Mauricio Rivera - Allende NL", o:"Cynthia González", amt:29499, stage:"Cierre Ganado", createMonth:"Febrero", closeMonth:"Mar", vertical:"Residencial", producto:"Wave", createOrder:5},
   {n:"Agustin Lobo - Residencial", o:"Cynthia González", amt:103862, stage:"1249322552", createMonth:"Febrero", closeMonth:"Ago", vertical:"Residencial", producto:"Wave", createOrder:4},
-  {n:"ARQ. Ricardo Acuña - Herradura", o:"Cynthia González", amt:103862, stage:"1249322549", createMonth:"Febrero", closeMonth:"Abr", vertical:"Residencial", producto:"Wave", createOrder:3},
+  {n:"ARQ. Ricardo Acuña - Herradura", o:"Cynthia González", amt:103862, stage:"1249322550", createMonth:"Febrero", closeMonth:"May", vertical:"Residencial", producto:"Wave", createOrder:3},
   {n:"CABINAS BB USA MARZO", o:"425771811", amt:130000, stage:"Cierre Ganado", createMonth:"Marzo", closeMonth:"Mar", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:21},
-  {n:"Tee shot CDMX", o:"Cynthia González", amt:107831, stage:"1249322549", createMonth:"Marzo", closeMonth:"May", vertical:"Club Deportivo", producto:"Golf", createOrder:1},
+  {n:"Tee shot CDMX", o:"Cynthia González", amt:107831, stage:"1249322549", createMonth:"Marzo", closeMonth:"Jul", vertical:"Club Deportivo", producto:"Golf", createOrder:1},
   {n:"Leonardo Hdz - GREEN WORLD", o:"Cynthia González", amt:62898, stage:"Cierre Perdido", createMonth:"Marzo", closeMonth:"Abr", vertical:"Centro de Entretenimiento", producto:"Golf", createOrder:2},
-  {n:"Casa Club Bonfil - Cancún", o:"Cynthia González", amt:281900, stage:"1249322549", createMonth:"Marzo", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:23},
+  {n:"Casa Club Bonfil - Cancún", o:"Cynthia González", amt:281900, stage:"1249322549", createMonth:"Marzo", closeMonth:"Jun", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:23},
   {n:"Frantz Ancira", o:"Cynthia González", amt:35345, stage:"Cierre Ganado", createMonth:"Marzo", closeMonth:"Mar", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:24},
   {n:"The Excellence Collection", o:"Jorge Avalos", amt:39415, stage:"Cierre Ganado", createMonth:"Marzo", closeMonth:"Mar", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:25},
   {n:"Pablo Avila - Pesqueria", o:"Jorge Avalos", amt:100000, stage:"1249322550", createMonth:"Marzo", closeMonth:"Abr", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:26},
   {n:"Jacobo Zablah", o:"Jorge Avalos", amt:49000, stage:"1249322547", createMonth:"Marzo", closeMonth:"Jun", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:27},
   {n:"Arturo Vazquez Silveyra", o:"Cynthia González", amt:80845, stage:"1249322550", createMonth:"Marzo", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:28},
   {n:"Santiago Fungi", o:"Jorge Avalos", amt:29499, stage:"1249322552", createMonth:"Marzo", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:29},
-  {n:"VICTOR VARELA - RESIDENCIAL", o:"Cynthia González", amt:92510, stage:"1249322549", createMonth:"Marzo", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:30},
-  {n:"Lalo Sierra - BATBOX CULIACAN", o:"Cynthia González", amt:98200, stage:"1249322549", createMonth:"Marzo", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:31},
+  {n:"VICTOR VARELA - RESIDENCIAL", o:"Cynthia González", amt:92510, stage:"1249322550", createMonth:"Marzo", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:30},
+  {n:"Lalo Sierra - BATBOX CULIACAN", o:"Cynthia González", amt:98200, stage:"1249322549", createMonth:"Marzo", closeMonth:"Jul", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:31},
   {n:"Juan Lopez - Residencial", o:"Cynthia González", amt:99000, stage:"1249322548", createMonth:"Marzo", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:32},
   {n:"Pedro de los Santos", o:"Jorge Avalos", amt:73500, stage:"1249322545", createMonth:"Marzo", closeMonth:"Jun", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:33},
-  {n:"Jose Oria - WAVE CDMX", o:"Cynthia González", amt:29499, stage:"1249322549", createMonth:"Marzo", closeMonth:"Abr", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:34},
+  {n:"Jose Oria - WAVE CDMX", o:"Cynthia González", amt:29499, stage:"Dejó de Responder", createMonth:"Marzo", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:34},
   {n:"Alejandro Marquez - Villahermosa", o:"Jorge Avalos", amt:62500, stage:"1249322546", createMonth:"Marzo", closeMonth:"Jun", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:35},
-  {n:"Abisai García - Residencial Monclova", o:"Cynthia González", amt:26895, stage:"1249322552", createMonth:"Marzo", closeMonth:"Abr", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:36},
+  {n:"Abisai García - Residencial Monclova", o:"Cynthia González", amt:26895, stage:"1249322552", createMonth:"Marzo", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:36},
   {n:"Querencia Poliza Oro Anual", o:"Ivan Leija", amt:2229, stage:"Cierre Ganado", createMonth:"Marzo", closeMonth:"Abr", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:37},
   {n:"La Fundacion  Poliza Oro", o:"Ivan Leija", amt:2229, stage:"Cierre Ganado", createMonth:"Marzo", closeMonth:"Mar", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:38},
   {n:"La Fundacion - Timing Belt + Cable Camara", o:"Ivan Leija", amt:232, stage:"Cierre Ganado", createMonth:"Marzo", closeMonth:"Mar", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:39},
@@ -530,8 +530,12 @@ const ALL_DEALS = [
   {n:"Leisli Rdz - Villahermosa Tabasco", o:"Cynthia González", amt:98200, stage:"Dejó de Responder", createMonth:"Abril", closeMonth:"Jun", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:46},
   {n:"Natalia Lee - Wave Indoor", o:"Cynthia González", amt:16379, stage:"1249322549", createMonth:"Abril", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:47},
   {n:"Refacciones Querencia Abril", o:"Ivan Leija", amt:1843, stage:"Cierre Ganado", createMonth:"Abril", closeMonth:"Abr", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:48},
-  {n:"Refacciones - Bunker Swings and Beers", o:"Ivan Leija", amt:962, stage:"1249322549", createMonth:"Abril", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:49},
+  {n:"Refacciones - Bunker Swings and Beers", o:"Ivan Leija", amt:962, stage:"Cierre Ganado", createMonth:"Abril", closeMonth:"Abr", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:49},
   {n:"Torre C5C - Refacciones", o:"Ivan Leija", amt:1262, stage:"1249322544", createMonth:"Abril", closeMonth:"Abr", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:50},
+  {n:"EXCELLENCE - PUNTA CANA", o:"Jorge Avalos", amt:147501, stage:"1249322549", createMonth:"Abril", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:51},
+  {n:"GREEN 19 - RAYMUNDO OCHOA", o:"Cynthia González", amt:454916, stage:"1249322549", createMonth:"Abril", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:52},
+  {n:"Roberto Torres", o:"Cynthia González", amt:102500, stage:"1249322545", createMonth:"Abril", closeMonth:"May", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:53},
+  {n:"Emilio Kovaci", o:"Cynthia González", amt:117996, stage:"1249322545", createMonth:"Abril", closeMonth:"Jun", vertical:"— COMPLETAR —", producto:"— COMPLETAR —", createOrder:54},
 ];
 
 const DEALS_MONTH = ALL_DEALS.filter(d => d.createMonth === 'Marzo');
@@ -550,9 +554,9 @@ const TABLE_TITLES = {
 // REGLA: wonVal   = Cierres Ganados con closedate en 2026 · Pipeline 2025 + Pipeline 2026
 const SUM = {
   month: { c:{contacts:71,deals:12,won:3,accepted:0,wonVal:194844,totalVal:1071634}, j:{contacts:19,deals:6,won:4,accepted:0,wonVal:650733,totalVal:353914}, i:{contacts:2,deals:4,won:3,accepted:0,wonVal:2875,totalVal:5104} },
-  q1: { c:{contacts:254,deals:26,won:5,accepted:0,wonVal:475522,totalVal:3195541}, j:{contacts:54,deals:9,won:9,accepted:0,wonVal:958445,totalVal:807356}, i:{contacts:29,deals:7,won:5,accepted:0,wonVal:35765,totalVal:43700} },
-  q2: { c:{contacts:33,deals:3,won:0,accepted:0,wonVal:0,totalVal:210079}, j:{contacts:1,deals:1,won:0,accepted:0,wonVal:0,totalVal:19499}, i:{contacts:2,deals:4,won:3,accepted:0,wonVal:6901,totalVal:6897} },
-  year: { c:{contacts:287,deals:29,won:5,accepted:0,wonVal:475522,totalVal:3405620}, j:{contacts:55,deals:10,won:9,accepted:0,wonVal:958445,totalVal:826855}, i:{contacts:31,deals:11,won:8,accepted:0,wonVal:42666,totalVal:50597} },
+  q1: { c:{contacts:254,deals:26,won:5,accepted:0,wonVal:475522,totalVal:3195541}, j:{contacts:54,deals:9,won:9,accepted:0,wonVal:958445,totalVal:680286}, i:{contacts:29,deals:7,won:5,accepted:0,wonVal:35765,totalVal:43700} },
+  q2: { c:{contacts:33,deals:6,won:0,accepted:0,wonVal:0,totalVal:885491}, j:{contacts:1,deals:2,won:0,accepted:0,wonVal:0,totalVal:167000}, i:{contacts:8,deals:4,won:4,accepted:0,wonVal:7863,totalVal:6897} },
+  year: { c:{contacts:287,deals:32,won:5,accepted:0,wonVal:475522,totalVal:4081032}, j:{contacts:55,deals:11,won:9,accepted:0,wonVal:958445,totalVal:847286}, i:{contacts:37,deals:11,won:9,accepted:0,wonVal:43629,totalVal:50597} },
 };
 
 // ─── MONTHLY: tarjetas vendedor ─────────────────────────────────────────────
@@ -1096,11 +1100,15 @@ const SUM = {
 // REGLA MONTHLY: deals    = TODOS los negocios creados en el mes (incluyendo Perdidos/Dejó de Responder)
 // REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
 // REGLA MONTHLY: wonVal   = Cierres Ganados P2025+P2026 por fecha de CIERRE en ese mes
+// REGLA MONTHLY: contacts = contactos asignados al vendedor creados ese mes (fuente HubSpot)
+// REGLA MONTHLY: deals    = TODOS los negocios creados en el mes (incluyendo Perdidos/Dejó de Responder)
+// REGLA MONTHLY: totalVal = suma de montos de todos los deals creados en el mes (sin filtro de etapa)
+// REGLA MONTHLY: wonVal   = Cierres Ganados P2025+P2026 por fecha de CIERRE en ese mes
 const MONTHLY = {
-  Ene:  { label:"Enero 2026",    c:{contacts:69,deals:8,won:0,wonVal:0,totalVal:1146117}, j:{contacts:18,deals:2,won:2,wonVal:128375,totalVal:394105}, i:{contacts:21,deals:2,won:1,wonVal:27703,totalVal:32890} },
+  Ene:  { label:"Enero 2026",    c:{contacts:69,deals:8,won:0,wonVal:0,totalVal:1146117}, j:{contacts:18,deals:2,won:2,wonVal:128375,totalVal:267035}, i:{contacts:21,deals:2,won:1,wonVal:27703,totalVal:32890} },
   Feb:  { label:"Febrero 2026",    c:{contacts:114,deals:6,won:2,wonVal:280678,totalVal:977790}, j:{contacts:17,deals:1,won:3,wonVal:179337,totalVal:59337}, i:{contacts:6,deals:1,won:1,wonVal:5187,totalVal:5706} },
   Mar:  { label:"Marzo 2026",    c:{contacts:71,deals:12,won:3,wonVal:194844,totalVal:1071634}, j:{contacts:19,deals:6,won:4,wonVal:650733,totalVal:353914}, i:{contacts:2,deals:4,won:3,wonVal:2875,totalVal:5104} },
-  Abr:  { label:"Abril 2026",    c:{contacts:33,deals:3,won:0,wonVal:0,totalVal:210079}, j:{contacts:1,deals:1,won:0,wonVal:0,totalVal:19499}, i:{contacts:2,deals:4,won:3,wonVal:6901,totalVal:6897} },
+  Abr:  { label:"Abril 2026",    c:{contacts:33,deals:6,won:0,wonVal:0,totalVal:885491}, j:{contacts:1,deals:2,won:0,wonVal:0,totalVal:167000}, i:{contacts:8,deals:4,won:4,wonVal:7863,totalVal:6897} },
   May:  { label:"Mayo 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
   Jun:  { label:"Junio 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
   Jul:  { label:"Julio 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
@@ -1109,7 +1117,7 @@ const MONTHLY = {
   Oct:  { label:"Octubre 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
   Nov:  { label:"Noviembre 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
   Dic:  { label:"Diciembre 2026",    c:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, j:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0}, i:{contacts:0,deals:0,won:0,wonVal:0,totalVal:0} },
-  Anio: { label:"Año 2026",      c:{contacts:287,deals:29,won:5,wonVal:475522,totalVal:3405620}, j:{contacts:55,deals:10,won:9,wonVal:958445,totalVal:826855}, i:{contacts:31,deals:11,won:8,wonVal:42666,totalVal:50597} },
+  Anio: { label:"Año 2026",      c:{contacts:287,deals:32,won:5,wonVal:475522,totalVal:4081032}, j:{contacts:55,deals:11,won:9,wonVal:958445,totalVal:847286}, i:{contacts:37,deals:11,won:9,wonVal:43629,totalVal:50597} },
 };
 
 // ─── TOTALVAL: Proyección Cierres ────────────────────────────────────────────
@@ -1146,6 +1154,7 @@ const WON_2026 = [
   {n:"Querencia Poliza Oro Anual", owner:"Ivan Leija", amount:2229, closeMonth:"Abril"},
   {n:"Refacciones Querencia Abril", owner:"Ivan Leija", amount:1843, closeMonth:"Abril"},
   {n:"Hugo Chavarria - Refacciones", owner:"Ivan Leija", amount:2829, closeMonth:"Abril"},
+  {n:"Refacciones - Bunker Swings and Beers", owner:"Ivan Leija", amount:962, closeMonth:"Abril"},
 ];
 
 // ─── WON_DETAIL: modal cierres ganados por vendedor ──────────────────────────
